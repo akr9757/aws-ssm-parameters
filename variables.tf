@@ -1,4 +1,6 @@
-variable "key_id" {}
+variable "key_id" {
+  default = "arn:aws:kms:us-east-1:975050250738:key/581c3619-7ba5-4a58-833d-0a657d809e15"
+}
 
 variable "parameters_store" {
   default = {

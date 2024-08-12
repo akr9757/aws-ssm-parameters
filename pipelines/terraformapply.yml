@@ -25,38 +25,6 @@ pipelines:
                     command: terraform
                     arguments: [ "apply", "-auto-approve"]
 
-      - QA:
-          fetch_materials: true
-          approval:
-            type: manual
-          jobs:
-            shell:
-              timeout: 0
-              tasks:
-                - exec:
-                    command: ls
-                    run_if: passed
 
-      - UAT:
-          fetch_materials: true
-          approval:
-            type: manual
-          jobs:
-            shell:
-              timeout: 0
-              tasks:
-                - exec:
-                    command: ls
-                    run_if: passed
 
-      - PROD:
-          fetch_materials: true
-          approval:
-            type: manual
-          jobs:
-            shell:
-              timeout: 0
-              tasks:
-                - exec:
-                    command: ls
-                    run_if: passed
+

@@ -1,4 +1,4 @@
-resource "aws_ssm_parameter" "string" {
+resource "aws_ssm_parameter" "parameters" {
   for_each = var.parameters
   name  = each.key
   type  = "String"

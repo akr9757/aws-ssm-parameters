@@ -3,16 +3,17 @@ key_id = "arn:aws:kms:us-east-1:975050250738:key/581c3619-7ba5-4a58-833d-0a657d8
 
 resource "aws_ssm_parameter" "foo" {
   for_each = var.parameters_store
-  name  = "foo"
+  name  = each.key
   type  = "String"
-  value = "bar"
+  value = each.value
   key_id = var.key_id
 }
 
 
 resource "aws_ssm_parameter" "foo" {
   for_each = var.secrets
-  name  = "foo"
+  name  = each.key
   type  = "SecureString"
-  value = "bar"
+  value = each.value
+  key_id = var.key_id
 }

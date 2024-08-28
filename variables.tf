@@ -4,8 +4,9 @@ variable "key_id" {
 
 variable "parameters" {
   default = {
-    "dev.expense.rds_username" = "admin1"
-    "dev.expense.rds_endpoint" = "dev-expense-rds.clcucwu2kydp.us-east-1.rds.amazonaws.com"
+    "dev.expense.rds.username" = "admin1"
+    "dev.expense.rds.endpoint" = "dev-expense-rds.clcucwu2kydp.us-east-1.rds.amazonaws.com"
+    "dev.expense.frontend.backend_endpoint" = "https://backend-dev.akrdevops.online/"
 
   }
 }

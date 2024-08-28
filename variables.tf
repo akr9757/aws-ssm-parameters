@@ -7,7 +7,6 @@ variable "parameters" {
     "dev.expense.rds.username" = "admin1"
     "dev.expense.rds.endpoint" = "dev-expense-rds.clcucwu2kydp.us-east-1.rds.amazonaws.com"
     "dev.expense.frontend.backend_endpoint" = "https://backend-dev.akrdevops.online/"
-
   }
 }
 

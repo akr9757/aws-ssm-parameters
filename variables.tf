@@ -8,6 +8,8 @@ variable "parameters" {
     "dev.expense.rds.endpoint" = "dev-expense-rds.clcucwu2kydp.us-east-1.rds.amazonaws.com"
     "dev.expense.frontend.backend_endpoint" = "https://backend-dev.akrdevops.online/"
     "dev.expense.rds.password" = "ExpenseApp123"
+    "ssh.password" = "DevOps321"
+    "ssh.username" = "centos"
   }
 }
 

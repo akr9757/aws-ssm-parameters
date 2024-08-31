@@ -10,6 +10,8 @@ variable "parameters" {
     "dev.expense.rds.password" = "ExpenseApp123"
     "ssh.password" = "DevOps321"
     "ssh.username" = "centos"
+    "ses.username" = "AKIA6GBMGDHZLSFQTQRT"
+    "ses.password" = "BLnHVQaMXacIJWNVxvDlDIpOsEV/VItJJJszChNEcCVs"
   }
 }
 
